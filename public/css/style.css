@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(public/font/montserrat/Montserrat-Light.ttf) format('truetype');
+    }
+
+@font-face {
+    font-family: "Consolas";
+    src: url(public/font/consolas/Consolas.ttf) format('truetype');
+    }
+
+    #variable {
+        color: #31e1f7;
+    }
+
+    #echo {
+        color: #fdff00;
+    }
+
+    #if {
+        color: #A149FA;
+    }
+
+    #number {
+        color: #9cff2e;
+    }
+
+    #string {
+        color: #f57328;
+    }
+
+    #kurung1 {
+        color: #FFB200;
+    }
+
+    #reminder {
+        color: gray;
+        font-size: 13px;
+    }
+
+    header a { 
+        text-decoration: none;
+    }
+
+    footer a {
+        text-decoration: none;
+    }
+
+    #nav {
+        font-family: "Montserrat", sans-serif;
+    }
+
+    header {
+        padding: 148px 0px 200px 0px;
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    #content { 
+        font-family: "Montserrat", sans-serif;
+        margin: 70px 200px 0px 200px;
+    }
+
+    header h1{
+        font-size: 130px;
+    }
+
+    header h5{
+        font-weight: 600;
+    }
+
+    #main.title {
+        font-weight: 900;
+    }
+
+    form input{
+        width: 50px;
+    }
+
+    #program {
+        font-family: "Consolas", sans-serif;
+    }
+
+    footer {
+        font-family: "Montserrat", sans-serif;
+    }
