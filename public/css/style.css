@@ -8,6 +8,11 @@
     src: url(public/font/consolas/Consolas.ttf) format('truetype');
     }
 
+@font-face {
+    font-family: "Poppins";
+    src: url(public/font/poppins/Poppins-Regular.otf) format('truetype');
+    }
+
     #variable {
         color: #31e1f7;
     }
@@ -46,7 +51,7 @@
     }
 
     #nav {
-        font-family: "Montserrat", sans-serif;
+        font-family: "Poppins", sans-serif;
     }
 
     header {

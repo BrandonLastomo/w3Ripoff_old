@@ -56,7 +56,7 @@
 <!-- Footer -->
 <footer class="text-center text-lg-start text-dark bg-light">
     <!-- Copyright -->
-    <div class="text-center p-3 text-dark bg-light">
+    <div class="text-center pt-3 px-3 text-dark bg-light">
       &copy; 2022 Copyright: Brandon with
       <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
     </div>
