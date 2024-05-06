@@ -13,17 +13,15 @@
             $row = mysqli_fetch_assoc($sql);
             if ($row['email'] === $email && $row['password'] === $password) {
                 $_SESSION['email'] = $row['email'];
-                // $_SESSION['nama'] = $row['nama'];
                 $_SESSION['id'] = $row['id'];
-                header("Location: index.php");
-                exit();
-            }
                 echo "
                 <script>
-                    alert('Login berhasil');
+                    alert('Login succeded');
+                    location.replace('index.php');
                 </script>
                 ";
-                header('Location: index.php');
+                exit();
+            }
         }
 
         else {
