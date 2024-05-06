@@ -38,10 +38,8 @@
           </ul>
         </li>
       </ul>
-      <form class="d-flex">
-        <a href="login.php">
+      <form class="d-flex" action="/login.php">
         <button class="btn btn-danger" type="submit">Login</button>
-        </a>
       </form>
     </div>
   </div>
