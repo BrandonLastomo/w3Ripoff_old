@@ -21,7 +21,18 @@
 
 <!-- Header -->
 <header class="px-3 bg-dark text-light">
-    <h1 class="pb-3">Hello<span class="text-danger">!</span></h1>
+    <?php
+        include "conn.php";
+        $username = $_SESSION['username'];
+
+        if (isset($_SESSION['id']) && isset($_SESSION['email'])) {
+    ?>
+    <h1 class="pb-3">Hello, <span class="text-danger"><?php echo $username;?> !</span></h1>
+    <?php
+        } else {
+    ?>
+    <h1 class="pb-3">Hello, <span class="text-danger">!</span></h1>
+    <?php }; ?>
     <h5 class="ps-2">This is a web for you to learn the big picture of <a href="tipeData.php" class="text-danger">data type</a>, 
     <a href="conditional.php" class="text-danger">conditional statement</a>, <a href="looping.php" class="text-danger">looping</a>, and 
     <a href="array.php" class="text-danger">array</a> in php.</h5>

@@ -21,6 +21,17 @@
             <li><a class="dropdown-item" href="array.php">Array</a></li>
           </ul>
         </li>
+
+        <?php
+        session_start();
+        if (isset($_SESSION['id']) && isset($_SESSION['email'])) {
+        ?>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.php">Your Learn History</a>
+        </li>
+        <?php
+        };
+        ?>
       </ul>
       <form class="d-flex" action="/login.php">
         <button class="btn btn-danger" type="submit">Login</button>

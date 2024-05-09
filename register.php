@@ -2,10 +2,11 @@
 	include "conn.php";
 
 	if(isset($_POST["register"])){
+		$username = $_POST["username"];
 		$email = $_POST["email"];
         $password = md5($_POST["password"]);
 
-		$regist = mysqli_query($conn, "insert into users(email, password) values('$email', '$password')");
+		$regist = mysqli_query($conn, "insert into users(username, email, password) values('$username', '$email', '$password')");
 
 		if ($regist) {
 			echo "
@@ -50,13 +51,19 @@
                     <form action="/register.php" method="POST">
                         <center>
                     <div class="form-floating col-md-8 pb-1">
-                        <input type="email" name="email" class="form-control border border-dark @error('email') is-invalid @enderror"
-                        id="email" placeholder="name@example.com" autofocus required>
+                        <input type="text" name="username" class="form-control border border-dark"
+                        id="username" placeholder="username" autofocus required>
+                        <label for="username" class="text-secondary">Username</label>
+                        <div class="invalid-feedback">
+                        </div>
+                    </div>
+                    <div class="form-floating col-md-8 pb-1">
+                        <input type="email" name="email" class="form-control border border-dark"
+                        id="email" placeholder="name@example.com" required>
                         <label for="email" class="text-secondary">Email address</label>
                         <div class="invalid-feedback">
                         </div>
                     </div>
-
                     <div class="form-floating col-md-8 pb-3">
                         <input type="password" name="password" class="form-control border border-dark" id="password" placeholder="Password" required>
                         <label for="password" class="text-secondary">Password</label>

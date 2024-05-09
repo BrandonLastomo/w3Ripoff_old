@@ -11,6 +11,7 @@
         if (mysqli_num_rows($sql) === 1) {
             $row = mysqli_fetch_assoc($sql);
             if ($row['email'] === $email && $row['password'] === $password) {
+                $_SESSION['username'] = $row['username'];
                 $_SESSION['email'] = $row['email'];
                 $_SESSION['id'] = $row['id'];
                 echo "
