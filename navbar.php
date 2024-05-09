@@ -15,7 +15,7 @@
             Courses
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="tipeData.php">Data Type</a></li>
+            <li><a class="dropdown-item" href="dataType.php">Data Type</a></li>
             <li><a class="dropdown-item" href="conditional.php">Conditional Statement</a></li>
             <li><a class="dropdown-item" href="looping.php">Looping</a></li>
             <li><a class="dropdown-item" href="array.php">Array</a></li>

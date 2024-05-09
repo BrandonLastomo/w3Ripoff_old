@@ -18,6 +18,14 @@
   include "navbar.php";
 ?>
 
+<!-- Insert to History if Logged In (Update History) -->
+<?php
+include "updateHistory.php";
+
+updateHistory("looping");
+
+?>
+
 <!-- Prolog -->
 <div class="pt-5 pb-2 mb-3 px-5 bg-light text-dark rounded" id="content">
         <h3 class="text-danger">Looping</h3>
