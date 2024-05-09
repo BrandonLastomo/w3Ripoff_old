@@ -23,11 +23,10 @@
         </li>
 
         <?php
-        session_start();
         if (isset($_SESSION['id']) && isset($_SESSION['email'])) {
         ?>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php">Your Learn History</a>
+          <a class="nav-link active" aria-current="page" href="learnHistory.php">Your Learn History</a>
         </li>
         </ul>
         <form class="d-flex" action="/logout.php">

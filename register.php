@@ -6,7 +6,7 @@
 		$email = $_POST["email"];
         $password = md5($_POST["password"]);
 
-		$regist = mysqli_query($conn, "insert into users(username, email, password) values('$username', '$email', '$password')");
+		$regist = mysqli_query($conn, "insert into users(username, email, password, learn_history) values('$username', '$email', '$password', '')");
 
 		if ($regist) {
 			echo "
@@ -39,7 +39,7 @@
 <body class="bg-dark">
 
     
-    <div class="row justify-content-start border border-dark my-4 mx-5 text-light">
+    <div class="row justify-content-start border border-dark mx-5 text-light">
         <div class="col-sm-5 my-4 ms-5 ps-5">
             <img src="public/img/loginImg.jpg" class="rounded float-start" style="width: 500px; height: 500px">
         </div>

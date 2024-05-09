@@ -11,9 +11,10 @@
         if (mysqli_num_rows($sql) === 1) {
             $row = mysqli_fetch_assoc($sql);
             if ($row['email'] === $email && $row['password'] === $password) {
-                $_SESSION['username'] = $row['username'];
                 $_SESSION['email'] = $row['email'];
                 $_SESSION['id'] = $row['id'];
+                $_SESSION['username'] = $row['username'];
+                $_SESSION['learn_history'] = $row['learn_history'];
                 echo "
                 <script>
                     alert('Login succeded');
@@ -51,7 +52,7 @@
 
     
     <div class="row justify-content-start border border-dark my-4 mx-5 text-light">
-        <div class="col-sm-5 my-4 ms-5 ps-5">
+        <div class="col-sm-5 ms-5 ps-5">
             <img src="public/img/loginImg.jpg" class="rounded float-start" style="width: 500px; height: 500px">
         </div>
         <div class="col-md-5" style="margin-top: 120px; margin-left: 100px">
