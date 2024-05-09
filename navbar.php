@@ -29,13 +29,18 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="index.php">Your Learn History</a>
         </li>
+        </ul>
+        <form class="d-flex" action="/logout.php">
+          <button class="btn btn-danger" type="submit">Logout</button>
+        </form>
         <?php
-        };
+        } else {
         ?>
       </ul>
       <form class="d-flex" action="/login.php">
         <button class="btn btn-danger" type="submit">Login</button>
       </form>
+      <?php } ?>
     </div>
   </div>
 </nav>

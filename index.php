@@ -20,18 +20,18 @@
 ?>
 
 <!-- Header -->
-<header class="px-3 bg-dark text-light">
+<header class="px-3 my-0 bg-dark text-light">
     <?php
         include "conn.php";
-        $username = $_SESSION['username'];
-
+        
         if (isset($_SESSION['id']) && isset($_SESSION['email'])) {
+        $username = $_SESSION['username'];
     ?>
     <h1 class="pb-3">Hello, <span class="text-danger"><?php echo $username;?> !</span></h1>
     <?php
         } else {
     ?>
-    <h1 class="pb-3">Hello, <span class="text-danger">!</span></h1>
+    <h1 class="pb-3">Hello<span class="text-danger">!</span></h1>
     <?php }; ?>
     <h5 class="ps-2">This is a web for you to learn the big picture of <a href="tipeData.php" class="text-danger">data type</a>, 
     <a href="conditional.php" class="text-danger">conditional statement</a>, <a href="looping.php" class="text-danger">looping</a>, and 
@@ -41,7 +41,7 @@
 <!-- Footer -->
 <footer class="text-center text-lg-start text-dark bg-light">
     <!-- Copyright -->
-    <div class="text-center pt-3 px-3 text-dark bg-light">
+    <div class="text-center py-3 px-3 text-dark bg-light">
       &copy; 2022 Copyright: Brandon with
       <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
     </div>
