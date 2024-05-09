@@ -45,6 +45,14 @@
         </h1>
     </center>
     <hr>
+    <?php
+    
+    if ($learn_history == "") {
+        echo "
+        <center><h5 class = text-danger>Let's learn something, shall we?</h5 class = text-danger></center>
+        ";
+    } else {
+    ?>
     <h3 class="text-danger"><?php
     
         $i = 0;
@@ -58,7 +66,7 @@
             $i++;
             echo "<br>";
         }
-        
+    }
     ?></h3>
 </div>
 
