@@ -3,7 +3,7 @@
 
 	if(isset($_POST["register"])){
 		$email = $_POST["email"];
-		$password = $_POST["password"];
+        $password = md5($_POST["password"]);
 
 		$regist = mysqli_query($conn, "insert into users(email, password) values('$email', '$password')");
 
