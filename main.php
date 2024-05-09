@@ -6,18 +6,6 @@ $b = 3.45;
 $c = 'a';
 $d = "Hello World";
 
-// no 2
-// if
-// $i = "yes";
-
-// if ($i == "yes") {
-//     echo("Hello!");
-// }
-
-// if else
-// if elseif else
-// switch
-
 ?>
 
 <!DOCTYPE html>
@@ -30,6 +18,7 @@ $d = "Hello World";
 	<link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
     <title>Main Page</title>
 </head>
+
 <body>
     <h3>No. 1</h3>
     <h4>integer</h4>
