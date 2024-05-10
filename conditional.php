@@ -93,8 +93,8 @@ updateHistory("Conditional,");
                     <span id="variable">$</span> <input type="text" name="ifVar1">  = 
                     <input type="text" name="ifVal1" id="ifVal1"> ;
                       <br><br>
-                    <span id="if">if</span> <span id="kurung1">(</span> 
-                    <input type="text" name="ifVar2"> == <input type="text" name="ifVal2">
+                    <span id="if">if</span> <span id="kurung1">(</span>
+                    <span id="variable">$</span> <input type="text" name="ifVar2"> == <input type="text" name="ifVal2">
                     <span id="kurung1">) {</span><br><br>
                     <span id="echo">echo</span> 
                     <span id="string">" <input type="text" name="ifVal3"> "</span> ;<br><br>
@@ -181,7 +181,7 @@ updateHistory("Conditional,");
                   <input type="text" name="ifelseVal1" id="ifelseVal1"> ;
                     <br><br>
                   <span id="if">if</span> <span id="kurung1">(</span>
-                  <input type="text" name="ifelseVar2"> == <input type="text" name="ifelseVal2">
+                  <span id="variable">$</span> <input type="text" name="ifelseVar2"> == <input type="text" name="ifelseVal2">
                   <span id="kurung1">) {</span><br><br>
                   <span id="echo">echo</span> <span id="string">" <input type="text" name="ifelseVal3"> "</span>;<br><br>
                   <span id="kurung1">}</span> <span id="if">else</span> <span id="kurung1">{</span><br><br>
